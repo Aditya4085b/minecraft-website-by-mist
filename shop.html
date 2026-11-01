@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minecraft SMP Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>⛏ ELITEMC STORE</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#ranks">Ranks</a>
+            <a href="#keys">Keys</a>
+        </nav>
+    </header>
+
+    
+<section class="shop-hero" id="shopHero">
+
+    <div class="shop-hero-overlay"></div>
+
+    <div class="shop-hero-content">
+        <h2 id="serverTitle">WELCOME TO SMP STORE</h2>
+
+        <p id="serverDescription">
+            Upgrade your Minecraft experience with exclusive ranks and keys!
+        </p>
+
+        <a href="#ranks" class="btn">EXPLORE RANKS</a>
+    </div>
+
+</section>
+
+
+    <!-- RANKS -->
+    <section class="shop-section" id="ranks">
+
+        <h2>👑 PREMIUM RANKS</h2>
+
+        <div class="shop-grid">
+
+            <div class="product-card">
+                <h3>👑 EMPEROR</h3>
+                <p class="price">₹1,599</p>
+                <p>Become an Emperor and rule the server!</p>
+                <button onclick="buyItem('Emperor',1599)">
+                    BUY NOW
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>💎 CRYSTAL</h3>
+                <p class="price">₹1,399</p>
+                <p>Unlock exclusive Crystal rank benefits!</p>
+                <button onclick="buyItem('Crystal',1399)">
+                    BUY NOW
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>⭐ SPECIAL RANK</h3>
+                <p class="price">₹999</p>
+                <p>Unlock exclusive Special Rank benefits!</p>
+                <button onclick="buyItem('Special Rank',999)">
+                    BUY NOW
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>❤️ POOKIE</h3>
+                <p class="price">₹699</p>
+                <p>Unlock exclusive Pookie rank benefits!</p>
+                <button onclick="buyItem('Pookie',699)">
+                    BUY NOW
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- KEYS -->
+    <section class="shop-section" id="keys">
+
+        <h2>🔑 EXCLUSIVE KEYS</h2>
+
+        <div class="shop-grid">
+
+            <div class="product-card">
+                <h3>🔑 KEY 1</h3>
+                <p class="price">₹50</p>
+                <p>Unlock special rewards!</p>
+                <button onclick="buyItem('Key 1',50)">BUY NOW</button>
+            </div>
+
+            <div class="product-card">
+                <h3>🔑 KEY 2</h3>
+                <p class="price">₹70</p>
+                <p>Unlock amazing rewards!</p>
+                <button onclick="buyItem('Key 2',70)">BUY NOW</button>
+            </div>
+
+            <div class="product-card">
+                <h3>🔑 KEY 3</h3>
+                <p class="price">₹120</p>
+                <p>Get better rewards!</p>
+                <button onclick="buyItem('Key 3',120)">BUY NOW</button>
+            </div>
+
+            <div class="product-card">
+                <h3>🔑 KEY 4</h3>
+                <p class="price">₹150</p>
+                <p>Unlock premium rewards!</p>
+                <button onclick="buyItem('Key 4',150)">BUY NOW</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    </section>
+
+
+    <!-- RANKS -->
+    <section class="shop-section" id="ranks">
+
+        <h2>🪙  ELITE COINS</h2>
+
+        <div class="shop-grid">
+
+            <div class="product-card">
+                <h3>100   coins 🪙 </h3>
+                <p class="price">₹49</p>
+                <p>Become an Emperor and rule the server!</p>
+                <button onclick="buyItem('100 coins 🪙 ',49)">
+                    BUY NOW
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>500   coins 🪙 </h3>
+                <p class="price">₹199</p>
+                <p>Unlock exclusive Crystal rank benefits!</p>
+                <button onclick="buyItem('500 coins 🪙 ',199)">
+                    BUY NOW
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>1,000   coins 🪙 </h3>
+                <p class="price">₹599</p>
+                <p>Unlock exclusive coins benefits!</p>
+                <button onclick="buyItem('1,000 coins 🪙 ',599)">
+                    BUY NOW
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>2,000   coins 🪙 </h3>
+                <p class="price">₹899</p>
+                <p>Get the exclusive Pookie rank!</p>
+                <button onclick="buyItem('2,000 coins 🪙 ',899)">
+                    BUY NOW
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+<!-- CHECKOUT & VERIFICATION MODAL -->
+<div id="checkoutModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h3 id="modalItemTitle">Complete Your Purchase</h3>
+    <p id="modalItemPrice"></p>
+    
+    <label for="mcUsername">Minecraft In-Game Name:</label>
+    <input type="text" id="mcUsername" placeholder="e.g. Steve" required />
+
+    <button id="payButton" onclick="initiatePhonePePayment()">Pay with PhonePe</button>
+
+    <div id="statusMessage" style="margin-top:15px; font-weight:bold;"></div>
+  </div>
+</div>
+
+<!-- Purchase Popup Window -->
+<div id="purchasePopup" class="modal-overlay">
+    <div class="modal-box">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Complete Purchase</h2>
+        <h3 id="popupItemName">Item Name</h3>
+        <p class="popup-price" id="popupItemPrice">₹0</p>
+
+        <div class="input-group">
+            <label for="mcUsername">Minecraft Username:</label>
+            <input type="text" id="mcUsername" placeholder="Enter your in-game name" required>
+        </div>
+
+        <button class="pay-btn" onclick="processPayment()">Proceed to Pay</button>
+        <p id="popupMessage"></p>
+    </div>
+</div>
+
+    <footer>
+        <p>© 2026 Minecraft SMP Store</p>
+        <p>All rights reserved.</p>
+    </footer>
+
+    <script src="shop.js"></script>
+
+</body>
+</html>

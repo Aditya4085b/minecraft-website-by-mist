@@ -1,4 +1,3 @@
-
 /* ==============================
    MINECRAFT SMP WEBSITE
    PREMIUM GAMING DESIGN
@@ -110,18 +109,18 @@ nav a:hover {
 .btn {
     display: inline-block;
     padding: 15px 35px;
-    background: linear-gradient(45deg, #00a83b, #48ff80);
-    color: black;
+    background: linear-gradient(45deg, #ad00f2, #a8f600);
+    color: rgb(255, 0, 166);
     font-weight: 700;
     text-decoration: none;
     border-radius: 8px;
     transition: 0.4s;
-    box-shadow: 0 0 20px rgba(0, 255, 100, 0.4);
+    box-shadow: 0 0 20px rgba(25, 0, 255, 0.4);
 }
 
 .btn:hover {
     transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 0 35px #00ff66;
+    box-shadow: 0 0 35px #0037ff;
 }
 
 /* ==============================
@@ -131,14 +130,14 @@ nav a:hover {
 #servers {
     padding: 100px 8%;
     text-align: center;
-    background: #0b120e;
+    background: #fff200;
 }
 
 #servers h2 {
     font-family: 'Orbitron', sans-serif;
     font-size: 35px;
     margin-bottom: 60px;
-    color: #48ff80;
+    color: #013fec;
     text-shadow: 0 0 15px #00ff66;
 }
 
@@ -196,7 +195,7 @@ nav a:hover {
 }
 
 .server-card p {
-    color: #ccc;
+    color: #00eeff;
     line-height: 1.8;
     margin-bottom: 25px;
 }
@@ -207,7 +206,7 @@ nav a:hover {
 }
 
 .server-card ul li {
-    color: #e5e5e5;
+    color: #00fb08;
     margin-bottom: 12px;
 }
 
@@ -215,7 +214,7 @@ nav a:hover {
 
 .server-card button {
     padding: 13px 28px;
-    background: #37ff75;
+    background: #af37ff;
     color: #061109;
     border: none;
     border-radius: 7px;
@@ -225,7 +224,7 @@ nav a:hover {
 }
 
 .server-card button:hover {
-    background: white;
+    background: rgb(0, 255, 255);
     box-shadow: 0 0 20px #37ff75;
     transform: scale(1.05);
 }
@@ -242,7 +241,7 @@ nav a:hover {
 }
 
 .server-card:nth-child(2) h3 {
-    color: #ff455a;
+    color: #ff0000;
 }
 
 .server-card:nth-child(2)::before {
@@ -270,7 +269,7 @@ nav a:hover {
 #about {
     padding: 100px 15%;
     text-align: center;
-    background: #101a13;
+    background: #1d095e;
 }
 
 #about h2,
@@ -307,7 +306,7 @@ nav a:hover {
 ================================ */
 
 footer {
-    background: #050805;
+    background: #8a00fa;
     border-top: 1px solid rgba(0,255,100,0.2);
     padding: 30px;
     text-align: center;
@@ -383,4 +382,602 @@ footer {
         padding: 70px 8%;
     }
 
+}
+
+/* =========================
+   SMP STORE DESIGN
+========================= */
+
+.shop-hero {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #ff00ee, #e702f8);
+}
+
+.shop-hero h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(25px, 4vw, 45px);
+    color: #48ff80;
+    text-shadow: 0 0 20px #00ff66;
+    margin-bottom: 20px;
+}
+
+.shop-hero p {
+    color: #ccc;
+}
+
+.shop-section {
+    padding: 80px 8%;
+    text-align: center;
+    background: linear-gradient(135deg, #ff00ee, #e702f8);
+}
+
+
+.shop-section h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #48ff80;
+    margin-bottom: 45px;
+    font-size: 30px;
+}
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.product-card {
+    padding: 30px 20px;
+    background: linear-gradient(145deg, #ff00dd, #101712);
+    border: 1px solid rgba(72,255,128,0.3);
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    border-color: #48ff80;
+    box-shadow: 0 0 25px rgba(0,255,100,0.2);
+}
+
+.product-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.product-card .price {
+    color: #48ff80;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.product-card p {
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.product-card button {
+    width: 100%;
+    padding: 13px;
+    background: #37ff75;
+    border: none;
+    border-radius: 7px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-card button:hover {
+    background: white;
+    box-shadow: 0 0 20px #37ff75;
+}
+
+@media(max-width: 900px) {
+    .shop-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 500px) {
+    .shop-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =================================
+   MINECRAFT 4K CINEMATIC THEME
+================================= */
+
+/* BACKGROUND IMAGE */
+
+body {
+    background: #8f6a7721;
+    position: relative;
+    isolation: isolate;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    background: url("https://images4.alphacoders.com/136/thumb-1920-1368460.png") center center / cover no-repeat;
+
+    filter: brightness(1.00) blur(0px);
+    transform: scale(1.02);
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    background: linear-gradient(
+        180deg,
+        rgba(0,0,0,0.25),
+        rgba(0,10,4,0.78)
+    );
+
+    pointer-events: none;
+}
+
+/* HEADER GLASS EFFECT */
+
+header {
+        background: url("https://wallpaperbat.com/img/70213281-red-minecraft-wallpaper.jpg") center center / cover no-repeat;
+    backdrop-filter: brightness(0.50) blur(18px);
+    border-bottom: 1px solid rgba(50, 67, 255, 0.35);
+    box-shadow: 0 5px 30px rgba(0,0,0,0.5);
+}
+
+/* HERO SECTION */
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('minecraft-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-bottom: 1px solid rgba(0,255,100,0.2);
+}
+
+.hero h2 {
+    color: white;
+    text-shadow:
+        0 0 10px #39ff65,
+        0 0 30px #00ff55,
+        0 0 60px #00a83b;
+}
+
+/* SURVIVAL BUTTON */
+
+.server-card:first-child button {
+    background: linear-gradient(rgba(0, 168, 59, 0.8), rgba(84, 255, 118, 0.8)), url('https://images2.alphacoders.com/137/thumb-1920-1370592.jpeg');
+    background-size: cover;
+    color: white;
+    border: 1px solid #8aff9f;
+    text-shadow: 1px 1px 3px black;
+    box-shadow:
+        0 0 12px #00ff55,
+        inset 0 0 10px rgba(255,255,255,0.2);
+}
+
+.server-card:first-child button:hover {
+    transform: translateY(-5px) scale(1.05);
+
+    box-shadow:
+        0 0 15px #00ff55,
+        0 0 40px #00ff55;
+}
+
+/* LIFESTEAL BUTTON */
+
+.server-card:nth-child(2) button {
+    background: linear-gradient(rgba(168, 0, 23, 0.8), rgba(255, 48, 76, 0.8)), url('https://images.unsplash.com/photo-1623931320499-528246a48914?q=80&w=400&auto=format&fit=crop');
+    background-size: cover;
+    color: white;
+    border: 1px solid #ff8795;
+    text-shadow: 1px 1px 3px black;
+    box-shadow:
+        0 0 12px #ff102e,
+        inset 0 0 10px rgba(255,255,255,0.2);
+}
+
+.server-card:nth-child(2) button:hover {
+    transform: translateY(-5px) scale(1.05);
+
+    box-shadow:
+        0 0 15px #ff102e,
+        0 0 40px #ff102e;
+}
+
+/* SERVER CARDS */
+
+.server-card {
+    background: linear-gradient(rgba(3, 15, 7, 0.85), rgba(3, 15, 7, 0.95)), url('https://images2.alphacoders.com/137/thumb-1920-1370592.jpeg');
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(50,255,100,0.5);
+    box-shadow: 0 1px 40px rgba(0,0,0,0.5);
+}
+
+.server-card:nth-child(2) {
+    background: linear-gradient(rgba(25, 3, 9, 0.85), rgba(25, 3, 9, 0.95)), url('https://images4.alphacoders.com/133/thumb-1920-1333795.jpeg');
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(255, 40, 65, 0.352);
+}
+
+/* SECTION BACKGROUNDS */
+
+#servers {
+    background: linear-gradient(rgba(11, 18, 14, 0.85), rgba(11, 18, 14, 0.95)), url('https://images.alphacoders.com/135/thumb-1920-1353837.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(8px);
+}
+
+#about {
+    background: linear-gradient(rgba(16, 26, 19, 0.85), rgba(16, 26, 19, 0.95)), url('https://images7.alphacoders.com/589/thumb-1920-589323.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(8px);
+}
+
+#contact {
+    background: linear-gradient(rgba(11, 27, 16, 0.85), rgba(16, 16, 16, 0.95)), url('https://images.alphacoders.com/963/thumb-1920-96393.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(8px);
+}
+
+/* GREEN HEADINGS */
+
+#servers h2,
+#about h2,
+#contact h2 {
+    color: #48ff80;
+    text-shadow: 0 0 20px #00ff55;
+}
+
+/* DISCORD / EXPLORE BUTTON */
+
+.btn {
+    background: linear-gradient(rgba(0, 168, 59, 0.7), rgba(84, 255, 118, 0.7)), url('11111111111111111111111111');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    border: 1px solid #a0ffb1;
+
+    box-shadow:
+        0 0 15px rgba(0,255,80,0.6),
+        0 0 35px rgba(0,255,80,0.2);
+}
+
+.btn:hover {
+    box-shadow:
+        0 0 25px #00ff55,
+        0 0 50px #00ff55;
+}
+
+/* FOOTER */
+
+footer {
+    background: rgba(0,0,0,0.9);
+    border-top: 1px solid rgba(0,255,100,0.3);
+}
+
+/* SMOOTH ANIMATIONS */
+
+.server-card,
+.btn,
+.server-card button {
+    transition: all 0.35s ease;
+}
+
+/* MOBILE BACKGROUND */
+
+@media(max-width: 768px) {
+    body::before {
+        background-position: center;
+    }
+
+    .hero {
+        background-attachment: scroll;
+    }
+}
+
+/* MINECRAFT STORE THEME */
+
+.shop-hero {
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.8)
+        ),
+        url("minecraft-bg.jpg") center / cover no-repeat;
+}
+
+.shop-section {
+    background: url("https://wallpaperbat.com/img/14503761-complementary-is-a-cool-shader.jpg") center / cover no-repeat;
+    backdrop-filter: blur(10px);
+}
+
+.product-card {
+    background: linear-gradient(rgba(4,20,10,0.85), rgba(4,20,10,0.95)), url('https://wallpaperaccess.com/full/5949659.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(0,255,100,0.45);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.product-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 0 30px rgba(0,255,100,0.35);
+}
+
+.product-card .price {
+    color: #48ff80;
+    text-shadow: 0 0 12px #00ff55;
+}
+
+.product-card button {
+    background: linear-gradient(rgba(0, 168, 59, 0.8), rgba(84, 255, 118, 0.8)), url('https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?q=80&w=400&auto=format&fit=crop');
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    box-shadow: 0 0 15px rgba(0,255,100,0.35);
+}
+
+.product-card button:hover {
+    box-shadow: 0 0 30px #00ff55;
+}
+
+/* SERVER SHOP HERO BANNER */
+
+.shop-hero {
+    min-height: 500px;
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+    border-bottom: 2px solid #37ff75;
+}
+
+/* HERO CONTENT */
+
+.shop-hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 40px 20px;
+    animation: fadeIn 1.2s ease;
+}
+
+.shop-hero h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(28px, 5vw, 55px);
+    color: white;
+
+    text-shadow:
+        0 0 15px #00ff55,
+        0 0 35px #00ff55;
+
+    margin-bottom: 20px;
+}
+
+.shop-hero p {
+    font-size: 17px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* MOBILE */
+
+@media(max-width: 768px) {
+
+    .shop-hero {
+        min-height: 380px;
+        background-position: center;
+    }
+
+    .shop-hero p {
+        font-size: 14px;
+    }
+
+}
+/* SERVER DESCRIPTION */
+
+.server-description {
+    text-align: center;
+    padding: 70px 20px;
+    color: white;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.server-description h1 {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    text-shadow: 0 0 15px #000;
+}
+
+.server-description h2 {
+    color: #7be477;
+    font-size: 38px;
+    margin-top: 5px;
+    text-shadow: 0 0 15px #39ff14;
+}
+
+.tagline {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin: 25px 0;
+}
+
+.intro {
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 20px auto 40px;
+}
+
+.game-modes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.mode-box {
+    background: rgba(0, 0, 0, 0.75);
+    border: 2px solid #7be477;
+    border-radius: 15px;
+    padding: 25px;
+    width: 350px;
+    transition: 0.3s;
+}
+
+.mode-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #39ff14;
+}
+
+.mode-box h3 {
+    color: #7be477;
+    font-size: 23px;
+}
+
+.mode-box p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.join-text {
+    margin-top: 55px;
+}
+
+.ending {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Modal Overlay (Background Dimming) */
+.modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75); 
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Box */
+.modal-box {
+    background: #1e1e24; /* Dark theme to match gaming style */
+    color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    border: 2px solid #333;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #888;
+    transition: 0.2s ease-in-out;
+}
+
+.close-btn:hover {
+    color: #ff4757;
+}
+
+/* Form Elements */
+.input-group {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #2a2a35;
+    color: white;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #2ed573;
+}
+
+/* Pay Button */
+.pay-btn {
+    background: #5f27cd; /* Purple to match PhonePe branding */
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.pay-btn:hover {
+    background: #341f97;
+}
+
+#popupMessage {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
 }
